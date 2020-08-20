@@ -2,23 +2,23 @@
 
 ## Building image
 
-´´´console
+```console
 docker build -t simcluit-rtems .
-´´´
+```
 
 ## Run container
 
-´´´console
+```console
 docker run --rm -t -i \
            -v /home/$USER/dev/rtems:/home/developer/dev \
            simcluit_rtems bash
-´´´
+```
 
 ## Compiling rtmes
 
 Inside the container:
 
-´´´console
+```console
 developer@c4e3c72899f2:~/dev$ rtems
 /home/developer/bin/rtems usage:
         c)  Clone repo
@@ -26,5 +26,5 @@ developer@c4e3c72899f2:~/dev$ rtems
         h)  Display this help
         v)  Verbose mode
 developer@c4e3c72899f2:~/dev$ rtems -cb
-´´´
+```
 
